@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    font-family: 'PT Mono', monospace;
+  margin: 0;
+  padding: 0;
+  /*box-shadow: inset 0px 0px 0px 2px gray;*/
+  color: #ffede9;
+}
+
+body{
+    background: #342e40;
+}
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+main{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.container-box{
+   padding: 20px;
+}
+
+.alternate{
+    background-color: #ffede9;
+    border-radius: 25px;
+}
+
+textarea{
+    width: 100%;
+    border-style: none;
+    height: 60vh;
+    font-size: 24px;
+    background-color: transparent ;
+    resize: none;
+    border: none;
+    outline:none;
+}
+
+.text_area{
+    color: #342e40;
+}
+
+p{
+    height: 18px;
+    font-size: 14px;
+    color: #ffede9;
+}
+
+.div-buttons{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons{
+    width: 48%;
+    color: #342e40;
+    background: #ffede9;
+    transition: all 1s;
+    border: none;
+}
+
+.buttons:hover{
+    color: #ffede9;
+    background: #342e40;
+    border: solid 2px #ffede9;
+}
+
+input{
+    height: 67px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.copy{
+    position: relative;
+    top: 18px;
+    width: 100%;
+    background-color: transparent ;
+    color: #342e40;
+    border: solid 2px #342e40;
+    transition: all 1s;
+}
+
+.copy:hover{
+    background-color: #342e40 ;
+    color: #ffede9;  
+}
+
+footer{
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* mobil*/
+
+@media screen and (max-width:480px){
+    main{
+        flex-direction: column;
+    }
+    .container-box{
+        margin: 10px;
+    }
+    textarea{
+        height: 40vh;
+    }
+    .copy{
+        margin-bottom: 10px;
+    }
+    p{
+        height: inherit;
+        padding: 15px;
+    }
+    footer{
+        position: relative;
+        padding-top: 20px;
+    }
+}
+
+/* tablet vertical*/
+
+@media screen and (max-width: 1024px){
+    main{
+        flex-direction: column;
+    }
+    .container-box{
+        margin: 10px;
+    }
+    p{
+        padding: 10px;
+    }
+    textarea{
+        height: 30vh;
+    }
+    .copy{
+        margin-bottom: 10px;
+    }
+    footer{
+        position: relative;
+        padding-top: 20px;
+    }
+}
+    
+
+
+

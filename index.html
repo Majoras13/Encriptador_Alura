@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alura | Encrypter</title>
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Encrypter / Decrypter</h1>
+    </header>
+<main>
+  <section class="container-box">
+    <textarea id="message-input" rows="10" cols="60" placeholder="Write / Paste your text..."></textarea>
+	  <div>
+		  <p> *Only lowercase letters and without accents.</p>
+	  </div>
+    <div class="div-buttons">
+		<input class="buttons" onClick="btnEncrypt()" type="submit" value="Encrypt">
+		<input class="buttons" onClick="btnDecrypt()" type="submit" value="Decrypt">
+    </div>
+  </section>
+  <section class="container-box alternate">
+    <textarea id="message-output" class="text_area" rows="10" cols="20" placeholder="Encrypt / Decrypted text"></textarea>
+    <div class="div-buttons">
+		<input class="copy" onClick="btnCopyTCB()"  type="submit" value="Copy to clipboard">
+    </div>
+  </section>
+</main>
+    <footer><p>Made By Mario Romero / Alura</p></footer>
+<!-- Encriptador script --> 
+<script src="js/encrypt.js"></script>
+</body>
+</html>
